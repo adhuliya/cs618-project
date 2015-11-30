@@ -1,0 +1,67 @@
+
+main/1 (main) @0x7fba386c77a8
+  Type: function definition analyzed
+  Visibility: force_output externally_visible prevailing_def public
+  References: 
+  Referring: 
+  Read from file: test.o
+  Availability: overwritable
+  First run: 0
+  Function flags:
+  Called by: 
+  Calls: func/0 (1.00 per call) 
+func/0 (func) @0x7fba386c7620
+  Type: function definition analyzed
+  Visibility: force_output prevailing_def_ironly
+  References: 
+  Referring: 
+  Read from file: test.o
+  Availability: available
+  First run: 0
+  Function flags:
+  Called by: main/1 (1.00 per call) 
+  Calls: 
+func/0 (func) @0x7f4c56eba7a8
+  Type: function definition analyzed
+  Visibility: force_output prevailing_def_ironly
+  References: 
+  Referring: 
+  Read from file: /tmp/ccWxvrlh.ltrans0.o
+  Availability: available
+  First run: 0
+  Function flags:
+  Called by: main/1 (1.00 per call) 
+  Calls: 
+main/1 (main) @0x7f4c56eba620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible prevailing_def public
+  References: 
+  Referring: 
+  Read from file: /tmp/ccWxvrlh.ltrans0.o
+  Availability: overwritable
+  First run: 0
+  Function flags:
+  Called by: 
+  Calls: func/0 (1.00 per call) 
+main/1 (main) @0x7f337e9707a8
+  Type: function definition analyzed
+  Visibility: force_output externally_visible prevailing_def public
+  References: 
+  Referring: 
+  Read from file: test.o
+  Availability: overwritable
+  First run: 0
+  Function flags:
+  Called by: 
+  Calls: func/0 (1.00 per call) 
+func/0 (func) @0x7f337e970620
+  Type: function definition analyzed
+  Visibility: force_output prevailing_def_ironly
+  References: 
+  Referring: 
+  Read from file: test.o
+  Availability: available
+  First run: 0
+  Function flags:
+  Called by: main/1 (1.00 per call) 
+  Calls: 

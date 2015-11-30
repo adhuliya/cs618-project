@@ -1,0 +1,82 @@
+---------------------------------------------------------------
+constraint-gen-07(stable) TRIVIAL CHANGES
+---------------------------------------------------------------
+
+This is a minor fix over 06. Now adding functions one by one
+to the source code by uncommenting only and not by copy pasting,
+as was done earlier.
+
+NEW CONVENTIONS
+
+//AN ===> comment by Anshuman
+//AH ===> comment by Komal
+//KO ===> comment by Ahzaz
+
+NEWADD ===> a new add during porting from 4.7.2 to 5.2.0
+
+RULE: The older code should be commented out, and not deleted.
+
+If using VIM editor, TagBar plugin can be used that will make the 
+naviagation of functions very easy.
+
+
+---------------------------------------------------------------
+constraint-gen-04(unstable)
+---------------------------------------------------------------
+In this version, Only initialization function of parser is enabled
+Rest of the code which is not related to initializatio is removed.
+Inside initialization -'DEBUG' and 'cs_insert_vi_for_tree' functions are not resolved yet.
+
+A three slash comment (///) in the code represents the portions which was removed by komal from the function and is yet to be resolved. other comments represent non relevant part to plugin.
+----------------------------------------------------------------
+constraint-gen-03: TRIVIAL CHANGES
+----------------------------------------------------------------
+Added block_information.cpp, block_information.hh to source.
+Also added block_information.o as a dependency to plugin.so make target.
+
+Compiles and runs successfully.
+
+
+----------------------------------------------------------------
+constraint-gen-02: MAJOR CHANGES
+----------------------------------------------------------------
+
+Basic plugin, that does nothing, but with important changes:
+
+To test run:
+$ make test
+
+
+Changed Makefile, analysis_plugin.hh (MAJOR CHANGE) , analysis_plugin.cpp, common.hh (MAJOR CHANGE).
+
+Makefile: made a new rule 'analysis' to test header dependencies with -H option
+  of gcc. (Can be ignored)
+
+analysis_plugin.hh: (MAJOR CHANGE) Tried to make minimalistic changes from to original version,
+  and the code looks almost the same as original 4.7.2 so that the changes,
+  can be easily seen.
+
+  Also, the PASS NAME has been changed to 'cs618heap' so that if it is printed some
+  where by GCC it can be easily spotted.
+
+analysis_plugin.cpp: Portions of the code are commented to make it compile
+
+common.hh: (MAJOR CHANGE) The order of includes of original header files of the,
+  code are fixed, with systematised addition/deletion/reordering. The hard 
+  dependencies between the header files were discovered to be:
+
+    Dependencies: (x ==> y) y depends on x, so x preceds y
+
+    stdio.h ==> vec.h
+    gcc-plugin.h ==> vec.h
+    <sstream> ==> gcc-plugin.h     # note below
+    # reversing the order leads to this error
+    # "locale_facets.h: error: macro "toupper" passed 2 arguments"
+    tree.h ==> cgraph.h
+    tree-ssa-alias.h ==> gimple.h
+    basic-block.h ==> gimple.h
+    gimple-expr.h ==> gimple.h
+
+
+  Have included iostream for diagnostic std::err messages for debugging 
+  purposes.

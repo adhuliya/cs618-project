@@ -1,0 +1,61 @@
+
+
+Function : main
+
+Parsed data: index 0, bool 1, block 4, 
+assignment index=0
+LHS: variable id 6, ptr_arith=0, offset 0(), type 0, name piA, RHS: variable id 7, ptr_arith=0, offset 0(), type 0, name piB
+Parsed data: index 7, bool 0, block 5, Variable id 7, name piB, offset 0
+Var id 7, name piB, offset 0
+Parsed data: index 6, bool 0, block 6, Variable id 6, name piA, offset 0
+Var id 6, name piA, offset 0
+
+main ()
+{
+  int i;
+  int * piB;
+  int * piA;
+  int D.2359;
+  long int D.2358;
+  long int D.2357;
+  long int piB.1;
+  long int piA.0;
+  int D.2354;
+
+<bb 2>:
+
+<bb 4>:
+  piA_2 = piB_1(D);
+
+<bb 5>:
+  D.2354_3 = *piB_1(D);
+
+<bb 6>:
+  *piA_2 = D.2354_3;
+
+<bb 7>:
+  piA.0_4 = (long int) piA_2;
+
+<bb 8>:
+  piB.1_5 = (long int) piB_1(D);
+
+<bb 9>:
+  D.2357_6 = piA.0_4 - piB.1_5;
+
+<bb 10>:
+  D.2358_7 = D.2357_6 /[ex] 4;
+
+<bb 11>:
+  i_8 = (int) D.2358_7;
+
+<bb 12>:
+  D.2359_9 = 0;
+
+<L0>:
+
+<bb 13>:
+  return D.2359_9;
+
+}
+
+

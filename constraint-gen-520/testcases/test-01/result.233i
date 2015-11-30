@@ -1,0 +1,112 @@
+
+
+Function : main
+
+Parsed data: index 0, bool 1, block 5, 
+assignment index=0
+LHS: variable id 8, ptr_arith=0, offset 0(), type 0, name pi, RHS: variable id 9, ptr_arith=0, offset 0(), type 2, name i
+Parsed data: index 8, bool 0, block 6, Variable id 8, name pi, offset 0
+Var id 8, name pi, offset 0
+Parsed data: index 8, bool 0, block 8, Variable id 8, name pi, offset 0
+Var id 8, name pi, offset 0
+Parsed data: index 1, bool 1, block 9, 
+assignment index=1
+LHS: variable id 8, ptr_arith=0, offset 0(), type 0, name pi, RHS: variable id 8, ptr_arith=1, offset 32(), type 0, name pi
+Parsed data: index 2, bool 1, block 10, 
+assignment index=2
+LHS: variable id 8, ptr_arith=0, offset 0(), type 0, name pi, RHS: variable id 8, ptr_arith=1, offset 18446744073709551584(), type 0, name pi
+Parsed data: index 3, bool 1, block 11, 
+assignment index=3
+LHS: variable id 8, ptr_arith=0, offset 0(), type 0, name pi, RHS: variable id 8, ptr_arith=1, offset 32(), type 0, name pi
+Parsed data: index 4, bool 1, block 12, 
+assignment index=4
+LHS: variable id 8, ptr_arith=0, offset 0(), type 0, name pi, RHS: variable id 8, ptr_arith=1, offset 18446744073709551584(), type 0, name pi
+Parsed data: index 5, bool 1, block 13, 
+assignment index=5
+LHS: variable id 8, ptr_arith=0, offset 0(), type 0, name pi, RHS: variable id 2, ptr_arith=0, offset 0(), type 2, name null
+Parsed data: index 6, bool 1, block 15, 
+assignment index=6
+LHS: variable id 7, ptr_arith=0, offset 0(), type 0, name piFormal, RHS: variable id 8, ptr_arith=0, offset 0(), type 0, name pi
+
+Function : func
+
+Parsed data: index 7, bool 1, block 2, 
+assignment index=7
+LHS: variable id 10, ptr_arith=0, offset 0(), type 0, name D.2363, RHS: variable id 7, ptr_arith=0, offset 0(), type 0, name piFormal
+Parsed data: index 10, bool 0, block 4, Variable id 10, name D.2363, offset 0
+Var id 10, name D.2363, offset 0
+
+main ()
+{
+  int * pi;
+  int i;
+  int D.2360;
+  int i.0;
+
+<bb 2>:
+
+<bb 4>:
+  i = 17;
+
+<bb 5>:
+  pi_1 = &i;
+
+<bb 6>:
+  i.0_2 = *pi_1;
+
+<bb 7>:
+  i = i.0_2;
+
+<bb 8>:
+  *pi_1 = 19;
+
+<bb 9>:
+  pi_3 = pi_1 + 4;
+
+<bb 10>:
+  pi_4 = pi_3 + -4;
+
+<bb 11>:
+  pi_5 = pi_4 + 4;
+
+<bb 12>:
+  pi_6 = pi_5 + -4;
+
+<bb 13>:
+  pi_7 = 0B;
+
+<bb 14>:
+  pi_8 = 17B;
+
+<bb 15>:
+  func (pi_8);
+
+<bb 16>:
+  D.2360_9 = 0;
+
+<bb 17>:
+  i ={v} {CLOBBER};
+
+<L0>:
+
+<bb 18>:
+  return D.2360_9;
+
+}
+
+
+func (int * piFormal)
+{
+  int * D.2363;
+
+<bb 2>:
+  D.2363_2 = piFormal_1(D);
+
+<L0>:
+
+<bb 4>:
+  return D.2363_2;
+
+}
+
+

@@ -1,0 +1,515 @@
+. analysis_plugin.hh
+.. common.hh
+... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/iostream
+.... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/x86_64-unknown-linux-gnu/bits/c++config.h
+..... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/x86_64-unknown-linux-gnu/bits/os_defines.h
+...... /usr/include/features.h
+....... /usr/include/x86_64-linux-gnu/sys/cdefs.h
+........ /usr/include/x86_64-linux-gnu/bits/wordsize.h
+....... /usr/include/x86_64-linux-gnu/gnu/stubs.h
+........ /usr/include/x86_64-linux-gnu/gnu/stubs-64.h
+..... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/x86_64-unknown-linux-gnu/bits/cpu_defines.h
+.... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/ostream
+..... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/ios
+...... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/iosfwd
+....... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/stringfwd.h
+........ /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/memoryfwd.h
+....... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/postypes.h
+........ /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/cwchar
+......... /usr/include/wchar.h
+.......... /usr/include/stdio.h
+.......... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include/stdarg.h
+.......... /usr/include/x86_64-linux-gnu/bits/wchar.h
+.......... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include/stddef.h
+.......... /usr/include/xlocale.h
+...... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/exception
+....... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/atomic_lockfree_defines.h
+...... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/char_traits.h
+....... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/stl_algobase.h
+........ /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/functexcept.h
+......... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/exception_defines.h
+........ /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/cpp_type_traits.h
+........ /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/ext/type_traits.h
+........ /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/ext/numeric_traits.h
+........ /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/stl_pair.h
+......... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/move.h
+.......... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/concept_check.h
+........ /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/stl_iterator_base_types.h
+........ /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/stl_iterator_base_funcs.h
+......... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/debug/debug.h
+........ /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/stl_iterator.h
+......... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/ptr_traits.h
+........ /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/predefined_ops.h
+....... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/cwchar
+........ /usr/include/wchar.h
+...... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/localefwd.h
+....... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/x86_64-unknown-linux-gnu/bits/c++locale.h
+........ /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/clocale
+......... /usr/include/locale.h
+.......... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include/stddef.h
+.......... /usr/include/x86_64-linux-gnu/bits/locale.h
+....... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/cctype
+........ /usr/include/ctype.h
+......... /usr/include/x86_64-linux-gnu/bits/types.h
+.......... /usr/include/x86_64-linux-gnu/bits/wordsize.h
+.......... /usr/include/x86_64-linux-gnu/bits/typesizes.h
+......... /usr/include/endian.h
+.......... /usr/include/x86_64-linux-gnu/bits/endian.h
+.......... /usr/include/x86_64-linux-gnu/bits/byteswap.h
+........... /usr/include/x86_64-linux-gnu/bits/wordsize.h
+........... /usr/include/x86_64-linux-gnu/bits/byteswap-16.h
+...... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/ios_base.h
+....... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/ext/atomicity.h
+........ /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/x86_64-unknown-linux-gnu/bits/gthr.h
+......... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/x86_64-unknown-linux-gnu/bits/gthr-default.h
+.......... /usr/include/pthread.h
+........... /usr/include/sched.h
+............ /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include/stddef.h
+............ /usr/include/time.h
+............ /usr/include/x86_64-linux-gnu/bits/sched.h
+........... /usr/include/time.h
+............ /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include/stddef.h
+............ /usr/include/x86_64-linux-gnu/bits/time.h
+............. /usr/include/x86_64-linux-gnu/bits/timex.h
+........... /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
+............ /usr/include/x86_64-linux-gnu/bits/wordsize.h
+........... /usr/include/x86_64-linux-gnu/bits/setjmp.h
+............ /usr/include/x86_64-linux-gnu/bits/wordsize.h
+........... /usr/include/x86_64-linux-gnu/bits/wordsize.h
+........ /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/x86_64-unknown-linux-gnu/bits/atomic_word.h
+....... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/locale_classes.h
+........ /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/string
+......... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/allocator.h
+.......... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/x86_64-unknown-linux-gnu/bits/c++allocator.h
+........... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/ext/new_allocator.h
+............ /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/new
+......... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/ostream_insert.h
+.......... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/cxxabi_forced.h
+......... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/stl_function.h
+.......... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/backward/binders.h
+......... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/range_access.h
+......... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/basic_string.h
+.......... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/ext/alloc_traits.h
+......... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/basic_string.tcc
+........ /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/locale_classes.tcc
+....... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/stdexcept
+...... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/streambuf
+....... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/streambuf.tcc
+...... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/basic_ios.h
+....... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/locale_facets.h
+........ /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/cwctype
+......... /usr/include/wctype.h
+.......... /usr/include/wchar.h
+........ /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/cctype
+........ /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/x86_64-unknown-linux-gnu/bits/ctype_base.h
+........ /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/streambuf_iterator.h
+........ /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/x86_64-unknown-linux-gnu/bits/ctype_inline.h
+........ /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/locale_facets.tcc
+....... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/basic_ios.tcc
+..... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/ostream.tcc
+.... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/istream
+..... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/istream.tcc
+... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/sstream
+.... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/sstream.tcc
+... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/gcc-plugin.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config.h
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/auto-host.h
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/ansidecl.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/system.h
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include/stdarg.h
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include/stddef.h
+..... /usr/include/stdio.h
+...... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include/stddef.h
+...... /usr/include/libio.h
+....... /usr/include/_G_config.h
+........ /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include/stddef.h
+........ /usr/include/wchar.h
+...... /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
+...... /usr/include/x86_64-linux-gnu/bits/sys_errlist.h
+...... /usr/include/x86_64-linux-gnu/bits/stdio.h
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/safe-ctype.h
+..... /usr/include/x86_64-linux-gnu/sys/types.h
+...... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include/stddef.h
+...... /usr/include/x86_64-linux-gnu/sys/select.h
+....... /usr/include/x86_64-linux-gnu/bits/select.h
+........ /usr/include/x86_64-linux-gnu/bits/wordsize.h
+....... /usr/include/x86_64-linux-gnu/bits/sigset.h
+....... /usr/include/x86_64-linux-gnu/bits/time.h
+...... /usr/include/x86_64-linux-gnu/sys/sysmacros.h
+..... /usr/include/errno.h
+...... /usr/include/x86_64-linux-gnu/bits/errno.h
+....... /usr/include/linux/errno.h
+........ /usr/include/x86_64-linux-gnu/asm/errno.h
+......... /usr/include/asm-generic/errno.h
+.......... /usr/include/asm-generic/errno-base.h
+..... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/algorithm
+...... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/utility
+....... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/stl_relops.h
+...... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/stl_algo.h
+....... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/cstdlib
+........ /usr/include/stdlib.h
+......... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include/stddef.h
+......... /usr/include/x86_64-linux-gnu/bits/waitflags.h
+......... /usr/include/x86_64-linux-gnu/bits/waitstatus.h
+......... /usr/include/alloca.h
+.......... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include/stddef.h
+......... /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h
+......... /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+....... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/algorithmfwd.h
+....... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/stl_heap.h
+....... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/stl_tempbuf.h
+........ /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/stl_construct.h
+..... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/cstring
+...... /usr/include/string.h
+....... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include/stddef.h
+..... /usr/include/strings.h
+..... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/cstdlib
+..... /usr/include/unistd.h
+...... /usr/include/x86_64-linux-gnu/bits/posix_opt.h
+...... /usr/include/x86_64-linux-gnu/bits/environments.h
+....... /usr/include/x86_64-linux-gnu/bits/wordsize.h
+...... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include/stddef.h
+...... /usr/include/x86_64-linux-gnu/bits/confname.h
+...... /usr/include/getopt.h
+..... /usr/include/x86_64-linux-gnu/sys/param.h
+...... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include/stddef.h
+...... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include-fixed/limits.h
+....... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include-fixed/syslimits.h
+........ /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include-fixed/limits.h
+......... /usr/include/limits.h
+.......... /usr/include/x86_64-linux-gnu/bits/posix1_lim.h
+........... /usr/include/x86_64-linux-gnu/bits/local_lim.h
+............ /usr/include/linux/limits.h
+.......... /usr/include/x86_64-linux-gnu/bits/posix2_lim.h
+.......... /usr/include/x86_64-linux-gnu/bits/xopen_lim.h
+........... /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
+...... /usr/include/signal.h
+....... /usr/include/x86_64-linux-gnu/bits/sigset.h
+....... /usr/include/x86_64-linux-gnu/bits/signum.h
+....... /usr/include/x86_64-linux-gnu/bits/siginfo.h
+........ /usr/include/x86_64-linux-gnu/bits/wordsize.h
+....... /usr/include/x86_64-linux-gnu/bits/sigaction.h
+....... /usr/include/x86_64-linux-gnu/bits/sigcontext.h
+....... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include/stddef.h
+....... /usr/include/x86_64-linux-gnu/bits/sigstack.h
+....... /usr/include/x86_64-linux-gnu/sys/ucontext.h
+........ /usr/include/signal.h
+....... /usr/include/x86_64-linux-gnu/bits/sigthread.h
+...... /usr/include/x86_64-linux-gnu/bits/param.h
+....... /usr/include/linux/param.h
+........ /usr/include/x86_64-linux-gnu/asm/param.h
+......... /usr/include/asm-generic/param.h
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include-fixed/limits.h
+..... /usr/include/x86_64-linux-gnu/sys/time.h
+...... /usr/include/x86_64-linux-gnu/bits/time.h
+..... /usr/include/fcntl.h
+...... /usr/include/x86_64-linux-gnu/bits/fcntl.h
+....... /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h
+........ /usr/include/x86_64-linux-gnu/bits/uio.h
+...... /usr/include/x86_64-linux-gnu/bits/stat.h
+..... /usr/include/x86_64-linux-gnu/sys/wait.h
+...... /usr/include/x86_64-linux-gnu/bits/siginfo.h
+....... /usr/include/x86_64-linux-gnu/bits/wordsize.h
+..... /usr/include/x86_64-linux-gnu/sys/mman.h
+...... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include/stddef.h
+...... /usr/include/x86_64-linux-gnu/bits/mman.h
+....... /usr/include/x86_64-linux-gnu/bits/mman-linux.h
+..... /usr/include/x86_64-linux-gnu/sys/resource.h
+...... /usr/include/x86_64-linux-gnu/bits/resource.h
+....... /usr/include/x86_64-linux-gnu/bits/time.h
+..... /usr/include/x86_64-linux-gnu/sys/times.h
+..... /usr/include/malloc.h
+...... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include/stddef.h
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include/stdint.h
+...... /usr/include/stdint.h
+....... /usr/include/x86_64-linux-gnu/bits/wordsize.h
+..... /usr/include/inttypes.h
+..... /usr/include/x86_64-linux-gnu/sys/stat.h
+...... /usr/include/x86_64-linux-gnu/bits/stat.h
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/filenames.h
+...... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/hashtab.h
+..... /usr/include/dlfcn.h
+...... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include/stddef.h
+...... /usr/include/x86_64-linux-gnu/bits/dlfcn.h
+..... /usr/local/include/gmp.h
+...... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/cstdio
+...... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include/stddef.h
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/libiberty.h
+...... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include/stddef.h
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/hwint.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/coretypes.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/highlev-plugin-common.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/tm.h
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/options.h
+...... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/flag-types.h
+...... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/i386/i386-opts.h
+....... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/i386/stringop.def
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/insn-constants.h
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/vxworks-dummy.h
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/i386/biarch64.h
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/i386/i386.h
+...... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/vxworks-dummy.h
+...... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/i386/i386-opts.h
+...... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/i386/x86-tune.def
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/i386/unix.h
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/i386/att.h
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/dbxelf.h
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/elfos.h
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/gnu-user.h
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/glibc-stdint.h
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/i386/x86-64.h
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/i386/gnu-user-common.h
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/i386/gnu-user64.h
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/linux.h
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/linux-android.h
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/i386/linux-common.h
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/i386/linux64.h
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/initfini-array.h
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/insn-flags.h
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/insn-modes.h
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/defaults.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/hash-set.h
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/hash-table.h
+...... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/ggc.h
+....... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/statistics.h
+....... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/gtype-desc.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/vec.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/machmode.h
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/mode-classes.def
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/hard-reg-set.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/input.h
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/line-map.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/function.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/predict.h
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/predict.def
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/dominance.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/cfg.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/cfgrtl.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/cfganal.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/lcm.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/cfgbuild.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/cfgcleanup.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/hash-map.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/is-a.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/plugin-api.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/ipa-ref.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/double-int.h
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/wide-int.h
+...... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/signop.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/real.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/fixed-value.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/alias.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/flags.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/symtab.h
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/obstack.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/tree-core.h
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/all-tree.def
+...... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/tree.def
+...... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/c-family/c-common.def
+...... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/ada/gcc-interface/ada-tree.def
+...... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/cp/cp-tree.def
+...... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/java/java-tree.def
+...... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/objc/objc-tree.def
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/builtins.def
+...... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/sync-builtins.def
+...... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/omp-builtins.def
+...... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/cilk-builtins.def
+...... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/gtm-builtins.def
+...... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/sanitizer.def
+...... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/cilkplus.def
+...... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/chkp-builtins.def
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/builtins.def
+...... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/sync-builtins.def
+...... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/omp-builtins.def
+...... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/cilk-builtins.def
+...... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/gtm-builtins.def
+...... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/sanitizer.def
+...... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/cilkplus.def
+...... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/chkp-builtins.def
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/treestruct.def
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/internal-fn.def
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/inchash.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/fold-const.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/tree-check.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/plugin.def
+... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/vec.h
+... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/tree.h
+... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/cgraph.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/cif-code.def
+... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/tree-ssa-alias.h
+... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/basic-block.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/cfg-flags.def
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/cfg-flags.def
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/cfghooks.h
+... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/gimple-expr.h
+... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/gimple.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/gimple.def
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/gsstruct.def
+... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/gimple-iterator.h
+... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/tree-cfg.h
+... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/cstdlib
+... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/coretypes.h
+... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/ggc.h
+... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/alloc-pool.h
+... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/params.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/params.def
+... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config.h
+... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/system.h
+... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/tm.h
+... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/diagnostic.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/pretty-print.h
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/wide-int-print.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/diagnostic-core.h
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/bversion.h
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/diagnostic.def
+... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/gimple-pretty-print.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/tree-pretty-print.h
+... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/tree-pass.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/timevar.h
+..... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/timevar.def
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/dumpfile.h
+... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/toplev.h
+... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/cfgloop.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/bitmap.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/sbitmap.h
+.... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/cfgloopmanip.h
+... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/map
+.... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/stl_tree.h
+.... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/stl_map.h
+.... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/stl_multimap.h
+... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/set
+.... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/stl_set.h
+.... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/stl_multiset.h
+... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/stack
+.... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/deque
+..... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/stl_uninitialized.h
+..... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/stl_deque.h
+..... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/deque.tcc
+.... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/stl_stack.h
+... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/list
+.... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/stl_list.h
+.... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/list.tcc
+... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/vector
+.... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/stl_vector.h
+.... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/stl_bvector.h
+.... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/bits/vector.tcc
+... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/tr1/unordered_map
+.... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/tr1/type_traits
+.... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/tr1/functional_hash.h
+.... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/tr1/hashtable.h
+..... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/tr1/hashtable_policy.h
+.... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/tr1/unordered_map.h
+... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/ctime
+... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/stor-layout.h
+... /home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/context.h
+.. parser.hh
+... common.hh
+.... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/cstdlib
+.... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/ctime
+... block_information.hh
+.... common.hh
+..... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/cstdlib
+..... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/ctime
+.... parser.hh
+..... common.hh
+...... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/cstdlib
+...... /home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/ctime
+In file included from analysis_plugin.hh:6:0,
+                 from analysis_plugin.cpp:6:
+parser.hh:12:0: warning: "RESULT" redefined
+ #define RESULT printf //added by komal need to verify
+ ^
+In file included from parser.hh:1:0,
+                 from block_information.hh:11,
+                 from parser.hh:7,
+                 from analysis_plugin.hh:6,
+                 from analysis_plugin.cpp:6:
+common.hh:71:0: note: this is the location of the previous definition
+ #define RESULT(...) fprintf (dump_file, __VA_ARGS__)
+ ^
+Multiple include guards may be useful for:
+/home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/clocale
+/home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/cstdio
+/home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/cstring
+/home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/cwctype
+/home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/tr1/hashtable_policy.h
+/home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/tr1/unordered_map.h
+/home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/x86_64-unknown-linux-gnu/bits/ctype_base.h
+/home/ahzaz/gcc/gcc520/install/include/c++/5.2.0/x86_64-unknown-linux-gnu/bits/ctype_inline.h
+/home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/include-fixed/syslimits.h
+/home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/ada/gcc-interface/ada-tree.def
+/home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/all-tree.def
+/home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/auto-host.h
+/home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/bversion.h
+/home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/c-family/c-common.def
+/home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/cif-code.def
+/home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/elfos.h
+/home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/glibc-stdint.h
+/home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/gnu-user.h
+/home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/i386/att.h
+/home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/i386/biarch64.h
+/home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/i386/gnu-user-common.h
+/home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/i386/gnu-user64.h
+/home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/i386/i386.h
+/home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/i386/linux-common.h
+/home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/i386/linux64.h
+/home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/i386/stringop.def
+/home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/i386/unix.h
+/home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/i386/x86-64.h
+/home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/i386/x86-tune.def
+/home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/initfini-array.h
+/home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/linux-android.h
+/home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/linux.h
+/home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/vxworks-dummy.h
+/home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/cp/cp-tree.def
+/home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/diagnostic.def
+/home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/gimple.def
+/home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/gsstruct.def
+/home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/gtype-desc.h
+/home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/internal-fn.def
+/home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/java/java-tree.def
+/home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/mode-classes.def
+/home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/objc/objc-tree.def
+/home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/params.def
+/home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/plugin.def
+/home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/predict.def
+/home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/timevar.def
+/home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/tree.def
+/home/ahzaz/gcc/gcc520/install/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/treestruct.def
+/usr/include/errno.h
+/usr/include/limits.h
+/usr/include/linux/errno.h
+/usr/include/x86_64-linux-gnu/asm/errno.h
+/usr/include/x86_64-linux-gnu/asm/param.h
+/usr/include/x86_64-linux-gnu/bits/byteswap-16.h
+/usr/include/x86_64-linux-gnu/bits/byteswap.h
+/usr/include/x86_64-linux-gnu/bits/confname.h
+/usr/include/x86_64-linux-gnu/bits/dlfcn.h
+/usr/include/x86_64-linux-gnu/bits/endian.h
+/usr/include/x86_64-linux-gnu/bits/environments.h
+/usr/include/x86_64-linux-gnu/bits/errno.h
+/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h
+/usr/include/x86_64-linux-gnu/bits/fcntl.h
+/usr/include/x86_64-linux-gnu/bits/local_lim.h
+/usr/include/x86_64-linux-gnu/bits/locale.h
+/usr/include/x86_64-linux-gnu/bits/mman-linux.h
+/usr/include/x86_64-linux-gnu/bits/mman.h
+/usr/include/x86_64-linux-gnu/bits/param.h
+/usr/include/x86_64-linux-gnu/bits/resource.h
+/usr/include/x86_64-linux-gnu/bits/sched.h
+/usr/include/x86_64-linux-gnu/bits/select.h
+/usr/include/x86_64-linux-gnu/bits/sigaction.h
+/usr/include/x86_64-linux-gnu/bits/signum.h
+/usr/include/x86_64-linux-gnu/bits/sigstack.h
+/usr/include/x86_64-linux-gnu/bits/stdio.h
+/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+/usr/include/x86_64-linux-gnu/bits/sys_errlist.h
+/usr/include/x86_64-linux-gnu/bits/typesizes.h
+/usr/include/x86_64-linux-gnu/bits/uio.h
+/usr/include/x86_64-linux-gnu/bits/waitflags.h
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h
+/usr/include/x86_64-linux-gnu/gnu/stubs.h
+analysis_plugin.hh
+block_information.hh

@@ -1,0 +1,71 @@
+
+
+Function : main
+
+Parsed data: index 0, bool 1, block 4, 
+assignment index=0
+LHS: variable id 6, ptr_arith=0, offset 0(), type 0, name ppi, RHS: variable id 7, ptr_arith=0, offset 0(), type 2, name pi
+Parsed data: index 1, bool 1, block 5, 
+assignment index=1
+LHS: variable id 6, ptr_arith=0, offset 0(), type 0, name ppi, RHS: variable id 7, ptr_arith=0, offset 0(), type 2, name pi
+Parsed data: index 2, bool 1, block 6, 
+assignment index=2
+LHS: variable id 6, ptr_arith=0, offset 0(), type 0, name ppi, RHS: variable id 7, ptr_arith=0, offset 0(), type 2, name pi
+Parsed data: index 3, bool 1, block 7, 
+assignment index=3
+LHS: variable id 8, ptr_arith=0, offset 0(), type 0, name pi.0, RHS: variable id 6, ptr_arith=0, offset 0(), type 1, name ppi
+Parsed data: index 4, bool 1, block 8, 
+assignment index=4
+LHS: variable id 7, ptr_arith=0, offset 0(), type 0, name pi, RHS: variable id 8, ptr_arith=0, offset 0(), type 0, name pi.0
+Parsed data: index 5, bool 1, block 9, 
+assignment index=5
+LHS: variable id 9, ptr_arith=0, offset 0(), type 0, name pi.1, RHS: variable id 7, ptr_arith=0, offset 0(), type 0, name pi
+Parsed data: index 6, bool 1, block 10, 
+assignment index=6
+LHS: variable id 6, ptr_arith=0, offset 0(), type 1, name ppi, RHS: variable id 9, ptr_arith=0, offset 0(), type 0, name pi.1
+
+main ()
+{
+  int * * ppi;
+  int * pi;
+  int D.2357;
+  int * pi.1;
+  int * pi.0;
+
+<bb 2>:
+
+<bb 4>:
+  ppi_1 = &pi;
+
+<bb 5>:
+  ppi_2 = &MEM[(void *)&pi + 8B];
+
+<bb 6>:
+  ppi_3 = &MEM[(void *)&pi + -8B];
+
+<bb 7>:
+  pi.0_4 = *ppi_3;
+
+<bb 8>:
+  pi = pi.0_4;
+
+<bb 9>:
+  pi.1_5 = pi;
+
+<bb 10>:
+  *ppi_3 = pi.1_5;
+
+<bb 11>:
+  D.2357_6 = 0;
+
+<bb 12>:
+  pi ={v} {CLOBBER};
+
+<L0>:
+
+<bb 13>:
+  return D.2357_6;
+
+}
+
+

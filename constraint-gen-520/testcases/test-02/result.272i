@@ -1,0 +1,61 @@
+
+cs618heap: STARTED.
+
+Symbols to be put in SSA form
+{ D.3964 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 4
+Number of blocks to update: 3 ( 75%)
+
+
+
+
+Function : main
+
+Parsed data: index 0, bool 1, block 4, 
+assignment index=0
+LHS: variable id 6, ptr_arith=0, offset 0(), type 0, name piA_2, RHS: variable id 7, ptr_arith=0, offset 0(), type 0, name piB_1
+Parsed data: index 7, bool 0, block 5, Variable id 7, name piB_1, offset 0
+Var id 7, name piB_1, offset 0
+Parsed data: index 6, bool 0, block 6, Variable id 6, name piA_2, offset 0
+Var id 6, name piA_2, offset 0
+Function : main
+
+Block : 2
+
+Block : 4
+1: piA_2 = piB_1(D);
+
+Block : 5
+2: _4 = *piB_1(D);
+
+Block : 6
+3: *piA_2 = _4;
+
+Block : 7
+4: _6 = (long int) piA_2;
+
+Block : 8
+5: _7 = (long int) piB_1(D);
+
+Block : 9
+6: _8 = _6 - _7;
+
+Block : 10
+7: _9 = _8 /[ex] 4;
+
+Block : 11
+8: i_10 = (int) _9;
+
+Block : 12
+9: _11 = 0;
+
+Block : 3
+10: <L0>:
+
+Block : 13
+11: return _11;
+
+
+
+cs618heap: ENDED.

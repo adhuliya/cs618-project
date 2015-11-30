@@ -1,0 +1,121 @@
+
+cs618heap: STARTED.
+
+Symbols to be put in SSA form
+{ D.3961 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 4
+Number of blocks to update: 3 ( 75%)
+
+
+
+Symbols to be put in SSA form
+{ D.3966 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 4
+Number of blocks to update: 3 ( 75%)
+
+
+
+
+Function : main
+
+Parsed data: index 0, bool 1, block 5, 
+assignment index=0
+LHS: variable id 8, ptr_arith=0, offset 0(), type 0, name pi_3, RHS: variable id 9, ptr_arith=0, offset 0(), type 2, name i
+Parsed data: index 8, bool 0, block 6, Variable id 8, name pi_3, offset 0
+Var id 8, name pi_3, offset 0
+Parsed data: index 8, bool 0, block 8, Variable id 8, name pi_3, offset 0
+Var id 8, name pi_3, offset 0
+Parsed data: index 1, bool 1, block 9, 
+assignment index=1
+LHS: variable id 10, ptr_arith=0, offset 0(), type 0, name pi_7, RHS: variable id 8, ptr_arith=1, offset 32(), type 0, name pi_3
+Parsed data: index 2, bool 1, block 10, 
+assignment index=2
+LHS: variable id 11, ptr_arith=0, offset 0(), type 0, name pi_8, RHS: variable id 10, ptr_arith=1, offset 18446744073709551584(), type 0, name pi_7
+Parsed data: index 3, bool 1, block 11, 
+assignment index=3
+LHS: variable id 12, ptr_arith=0, offset 0(), type 0, name pi_9, RHS: variable id 11, ptr_arith=1, offset 32(), type 0, name pi_8
+Parsed data: index 4, bool 1, block 12, 
+assignment index=4
+LHS: variable id 13, ptr_arith=0, offset 0(), type 0, name pi_10, RHS: variable id 12, ptr_arith=1, offset 18446744073709551584(), type 0, name pi_9
+Parsed data: index 5, bool 1, block 13, 
+assignment index=5
+LHS: variable id 14, ptr_arith=0, offset 0(), type 0, name pi_11, RHS: variable id 2, ptr_arith=0, offset 0(), type 2, name null
+Parsed data: index 6, bool 1, block 15, 
+assignment index=6
+LHS: variable id 7, ptr_arith=0, offset 0(), type 0, name piFormal, RHS: variable id 15, ptr_arith=0, offset 0(), type 0, name pi_12
+
+Function : func
+
+Parsed data: index 7, bool 1, block 2, 
+assignment index=7
+LHS: variable id 16, ptr_arith=0, offset 0(), type 0, name _2, RHS: variable id 7, ptr_arith=0, offset 0(), type 0, name piFormal
+Parsed data: index 16, bool 0, block 4, Variable id 16, name _2, offset 0
+Var id 16, name _2, offset 0
+Function : main
+
+Block : 2
+
+Block : 4
+1: i = 17;
+
+Block : 5
+2: pi_3 = &i;
+
+Block : 6
+3: _4 = *pi_3;
+
+Block : 7
+4: i = _4;
+
+Block : 8
+5: *pi_3 = 19;
+
+Block : 9
+6: pi_7 = pi_3 + 4;
+
+Block : 10
+7: pi_8 = pi_7 + 18446744073709551612;
+
+Block : 11
+8: pi_9 = pi_8 + 4;
+
+Block : 12
+9: pi_10 = pi_9 + 18446744073709551612;
+
+Block : 13
+10: pi_11 = 0B;
+
+Block : 14
+11: pi_12 = 17B;
+
+Block : 15
+12: func (pi_12);
+
+Block : 16
+13: _14 = 0;
+
+Block : 17
+14: i ={v} {CLOBBER};
+
+Block : 3
+15: <L0>:
+
+Block : 18
+16: return _14;
+
+Function : func
+
+Block : 2
+1: _2 = piFormal_1(D);
+
+Block : 3
+2: <L0>:
+
+Block : 4
+3: return _2;
+
+
+
+cs618heap: ENDED.

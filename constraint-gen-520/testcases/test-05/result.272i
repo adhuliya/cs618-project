@@ -1,0 +1,85 @@
+
+cs618heap: STARTED.
+
+Symbols to be put in SSA form
+{ D.3967 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 4
+Number of blocks to update: 3 ( 75%)
+
+
+
+
+Function : main
+
+Parsed data: index 0, bool 1, block 4, 
+assignment index=0
+LHS: variable id 6, ptr_arith=0, offset 0(), type 0, name ppiA_2, RHS: variable id 7, ptr_arith=0, offset 0(), type 0, name ppiB_1
+Parsed data: index 1, bool 1, block 5, 
+assignment index=1
+LHS: variable id 8, ptr_arith=0, offset 0(), type 0, name _4, RHS: variable id 7, ptr_arith=0, offset 0(), type 1, name ppiB_1
+Parsed data: index 2, bool 1, block 6, 
+assignment index=2
+LHS: variable id 6, ptr_arith=0, offset 0(), type 1, name ppiA_2, RHS: variable id 8, ptr_arith=0, offset 0(), type 0, name _4
+Parsed data: index 3, bool 1, block 7, 
+assignment index=3
+LHS: variable id 9, ptr_arith=0, offset 0(), type 0, name _6, RHS: variable id 6, ptr_arith=0, offset 0(), type 1, name ppiA_2
+Parsed data: index 4, bool 1, block 8, 
+assignment index=4
+LHS: variable id 10, ptr_arith=0, offset 0(), type 0, name _7, RHS: variable id 7, ptr_arith=0, offset 0(), type 1, name ppiB_1
+Parsed data: index 10, bool 0, block 9, Variable id 10, name _7, offset 0
+Var id 10, name _7, offset 0
+Parsed data: index 9, bool 0, block 10, Variable id 9, name _6, offset 0
+Var id 9, name _6, offset 0
+Function : main
+
+Block : 2
+
+Block : 4
+1: ppiA_2 = ppiB_1(D);
+
+Block : 5
+2: _4 = *ppiB_1(D);
+
+Block : 6
+3: *ppiA_2 = _4;
+
+Block : 7
+4: _6 = *ppiA_2;
+
+Block : 8
+5: _7 = *ppiB_1(D);
+
+Block : 9
+6: _8 = *_7;
+
+Block : 10
+7: *_6 = _8;
+
+Block : 11
+8: _10 = (long int) ppiA_2;
+
+Block : 12
+9: _11 = (long int) ppiB_1(D);
+
+Block : 13
+10: _12 = _10 - _11;
+
+Block : 14
+11: _13 = _12 /[ex] 8;
+
+Block : 15
+12: i_14 = (int) _13;
+
+Block : 16
+13: _15 = 0;
+
+Block : 3
+14: <L0>:
+
+Block : 17
+15: return _15;
+
+
+
+cs618heap: ENDED.

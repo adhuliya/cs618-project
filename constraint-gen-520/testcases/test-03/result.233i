@@ -1,0 +1,68 @@
+
+
+Function : main
+
+Parsed data: index 0, bool 1, block 4, 
+assignment index=0
+LHS: variable id 6, ptr_arith=0, offset 0(), type 0, name ppi, RHS: variable id 6, ptr_arith=1, offset 64(), type 0, name ppi
+Parsed data: index 1, bool 1, block 5, 
+assignment index=1
+LHS: variable id 6, ptr_arith=0, offset 0(), type 0, name ppi, RHS: variable id 6, ptr_arith=1, offset 18446744073709551552(), type 0, name ppi
+Parsed data: index 2, bool 1, block 6, 
+assignment index=2
+LHS: variable id 6, ptr_arith=0, offset 0(), type 0, name ppi, RHS: variable id 6, ptr_arith=1, offset 64(), type 0, name ppi
+Parsed data: index 3, bool 1, block 7, 
+assignment index=3
+LHS: variable id 6, ptr_arith=0, offset 0(), type 0, name ppi, RHS: variable id 6, ptr_arith=1, offset 18446744073709551552(), type 0, name ppi
+Parsed data: index 4, bool 1, block 8, 
+assignment index=4
+LHS: variable id 7, ptr_arith=0, offset 0(), type 0, name D.2354, RHS: variable id 6, ptr_arith=0, offset 0(), type 1, name ppi
+Parsed data: index 7, bool 0, block 9, Variable id 7, name D.2354, offset 0
+Var id 7, name D.2354, offset 0
+Parsed data: index 5, bool 1, block 10, 
+assignment index=5
+LHS: variable id 6, ptr_arith=0, offset 0(), type 1, name ppi, RHS: variable id 2, ptr_arith=0, offset 0(), type 2, name null
+
+main ()
+{
+  int * * ppi;
+  int D.2355;
+  int * D.2354;
+
+<bb 2>:
+
+<bb 4>:
+  ppi_2 = ppi_1(D) + 8;
+
+<bb 5>:
+  ppi_3 = ppi_2 + -8;
+
+<bb 6>:
+  ppi_4 = ppi_3 + 8;
+
+<bb 7>:
+  ppi_5 = ppi_4 + -8;
+
+<bb 8>:
+  D.2354_6 = *ppi_5;
+
+<bb 9>:
+  *D.2354_6 = 10;
+
+<bb 10>:
+  *ppi_5 = 0B;
+
+<bb 11>:
+  *ppi_5 = 17B;
+
+<bb 12>:
+  D.2355_7 = 0;
+
+<L0>:
+
+<bb 13>:
+  return D.2355_7;
+
+}
+
+

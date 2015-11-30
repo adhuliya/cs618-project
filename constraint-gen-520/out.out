@@ -1,0 +1,583 @@
+[H[2J[H[2J[H[2J\rm -f *.c.* *~ a.out result*
+\rm plugin.so* *.o
+rm: cannot remove ‘plugin.so*’: No such file or directory
+rm: cannot remove ‘*.o’: No such file or directory
+make: *** [clean] Error 1
+/home/komal/gcc/gcc520/install/bin/gcc -fPIC -flto -flto-partition=none  -I/home/komal/gcc/gcc520/install/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include -I/usr/include/x86_64-linux-gnu -c test.c 
+/home/komal/gcc/gcc520/install/bin/g++ -fPIC -O3 -fno-rtti -std=c++0x -O0 -I/home/komal/gcc/gcc520/install/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include -I/usr/include/x86_64-linux-gnu -c block_information.cpp 
+In file included from /home/komal/gcc/gcc520/install/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/tm.h:27:0,
+                 from /home/komal/gcc/gcc520/install/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/gcc-plugin.h:31,
+                 from common.hh:10,
+                 from block_information.hh:6,
+                 from block_information.cpp:6:
+/home/komal/gcc/gcc520/install/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/elfos.h:102:21: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+    fprintf ((FILE), "%s"HOST_WIDE_INT_PRINT_UNSIGNED"\n",\
+                     ^
+/home/komal/gcc/gcc520/install/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/elfos.h:170:24: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+       fprintf ((FILE), ","HOST_WIDE_INT_PRINT_UNSIGNED",%u\n",  \
+                        ^
+In file included from /home/komal/gcc/gcc520/install/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/tm.h:48:0,
+                 from /home/komal/gcc/gcc520/install/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/gcc-plugin.h:31,
+                 from common.hh:10,
+                 from block_information.hh:6,
+                 from block_information.cpp:6:
+/home/komal/gcc/gcc520/install/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/defaults.h:126:24: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+       fprintf ((FILE), ","HOST_WIDE_INT_PRINT_UNSIGNED",%u\n",  \
+                        ^
+/home/komal/gcc/gcc520/install/bin/g++ -fPIC -O3 -fno-rtti -std=c++0x -O0 -I/home/komal/gcc/gcc520/install/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include -I/usr/include/x86_64-linux-gnu -c parser.cpp 
+In file included from /home/komal/gcc/gcc520/install/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/tm.h:27:0,
+                 from /home/komal/gcc/gcc520/install/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/gcc-plugin.h:31,
+                 from common.hh:10,
+                 from parser.hh:1,
+                 from parser.cpp:10:
+/home/komal/gcc/gcc520/install/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/elfos.h:102:21: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+    fprintf ((FILE), "%s"HOST_WIDE_INT_PRINT_UNSIGNED"\n",\
+                     ^
+/home/komal/gcc/gcc520/install/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/elfos.h:170:24: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+       fprintf ((FILE), ","HOST_WIDE_INT_PRINT_UNSIGNED",%u\n",  \
+                        ^
+In file included from /home/komal/gcc/gcc520/install/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/tm.h:48:0,
+                 from /home/komal/gcc/gcc520/install/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/gcc-plugin.h:31,
+                 from common.hh:10,
+                 from parser.hh:1,
+                 from parser.cpp:10:
+/home/komal/gcc/gcc520/install/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/defaults.h:126:24: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+       fprintf ((FILE), ","HOST_WIDE_INT_PRINT_UNSIGNED",%u\n",  \
+                        ^
+/home/komal/gcc/gcc520/install/bin/g++ -fPIC -O3 -fno-rtti -std=c++0x -O0 -I/home/komal/gcc/gcc520/install/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include -I/usr/include/x86_64-linux-gnu -c analysis_plugin.cpp 
+In file included from /home/komal/gcc/gcc520/install/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/tm.h:27:0,
+                 from /home/komal/gcc/gcc520/install/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/gcc-plugin.h:31,
+                 from common.hh:10,
+                 from analysis_plugin.hh:5,
+                 from analysis_plugin.cpp:6:
+/home/komal/gcc/gcc520/install/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/elfos.h:102:21: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+    fprintf ((FILE), "%s"HOST_WIDE_INT_PRINT_UNSIGNED"\n",\
+                     ^
+/home/komal/gcc/gcc520/install/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/config/elfos.h:170:24: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+       fprintf ((FILE), ","HOST_WIDE_INT_PRINT_UNSIGNED",%u\n",  \
+                        ^
+In file included from /home/komal/gcc/gcc520/install/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/tm.h:48:0,
+                 from /home/komal/gcc/gcc520/install/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/gcc-plugin.h:31,
+                 from common.hh:10,
+                 from analysis_plugin.hh:5,
+                 from analysis_plugin.cpp:6:
+/home/komal/gcc/gcc520/install/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include/defaults.h:126:24: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+       fprintf ((FILE), ","HOST_WIDE_INT_PRINT_UNSIGNED",%u\n",  \
+                        ^
+In file included from analysis_plugin.cpp:6:0:
+analysis_plugin.hh:42:1: warning: converting to non-pointer type ‘unsigned int’ from NULL [-Wconversion-null]
+ };
+ ^
+/home/komal/gcc/gcc520/install/bin/g++ -I/home/komal/gcc/gcc520/install/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/plugin/include -I/usr/include/x86_64-linux-gnu -fPIC -O3 -fno-rtti -O3 -shared block_information.o parser.o analysis_plugin.o -fdump-ipa-all -fdump-tree-all -o plugin.so
+/home/komal/gcc/gcc520/install/bin/g++ -fplugin=./plugin.so test.o -flto -flto-partition=none -O3 -fdump-ipa-all -fdump-tree-all -o result
+
+cs618heap: STARTED.
+
+create_alloc_pool (constraint)
+create_alloc_pool (csvariable_info)
+(csvarinfo_t) pool_alloc (csvarinfo_pool)
+cs_new_var_info index: 0, escaped
+is_full_var = 1
+cs_new_var_info done
+(csvarinfo_t) pool_alloc (csvarinfo_pool)
+cs_new_var_info index: 1, undef
+is_full_var = 1
+cs_new_var_info done
+(csvarinfo_t) pool_alloc (csvarinfo_pool)
+cs_new_var_info index: 2, null
+is_full_var = 1
+cs_new_var_info done
+(csvarinfo_t) pool_alloc (csvarinfo_pool)
+cs_new_var_info index: 3, readonly
+is_full_var = 1
+cs_new_var_info doneinitialization() : Got main
+
+---------------------------------
+(null) <function_decl 0x2b57bab8c288 main
+    type <function_type 0x2b57bab8bc78
+        type <integer_type 0x2b57ba99a690 int public SI
+            size <integer_cst 0x2b57ba996df8 constant 32>
+            unit size <integer_cst 0x2b57ba996e10 constant 4>
+            align 32 symtab 0 alias set -1 canonical type 0x2b57ba99a690 precision 32 min <integer_cst 0x2b57ba996db0 -2147483648> max <integer_cst 0x2b57ba996dc8 2147483647>
+            pointer_to_this <pointer_type 0x2b57ba9b17e0>>
+        QI
+        size <integer_cst 0x2b57ba996ca8 constant 8>
+        unit size <integer_cst 0x2b57ba996cc0 constant 1>
+        align 8 symtab 0 alias set 0 canonical type 0x2b57bab8bbd0>
+    public static function-specific-target function-specific-opt QI file test.c line 8 col 5 align 8 context <translation_unit_decl 0x2b57b97e41e0 D.3951> initial <block 0x2b57bab91000>
+    result <result_decl 0x2b57b97e4258 D.3955
+        type <integer_type 0x2b57ba99a690 int public SI
+            size <integer_cst 0x2b57ba996df8 constant 32>
+            unit size <integer_cst 0x2b57ba996e10 constant 4>
+            align 32 symtab 0 alias set -1 canonical type 0x2b57ba99a690 precision 32 min <integer_cst 0x2b57ba996db0 -2147483648> max <integer_cst 0x2b57ba996dc8 2147483647>
+            pointer_to_this <pointer_type 0x2b57ba9b17e0>>
+        ignored SI file test.c line 8 col 5
+        size <integer_cst 0x2b57ba996df8 constant 32>
+        unit size <integer_cst 0x2b57ba996e10 constant 4>
+        align 32 context <function_decl 0x2b57bab8c288 main>>
+    struct-function 0x2b57bab8be70>
+---------------------------------
+
+Found main function 'main'
+Found main function 'main'
+in  cs create func info for : 0
+(csvarinfo_t) pool_alloc (csvarinfo_pool)
+cs_new_var_info index: 4, main
+is_full_var = 0
+cs_new_var_info done
+cs_insert_vi_for_tree
+
+cs_insert_vi_for_tree 0 -1162296696 56345224
+ 
+(csvarinfo_t) pool_alloc (csvarinfo_pool)
+cs_new_var_info index: 5, main.varargs
+is_full_var = 0
+cs_new_var_info done
+in  cs create func info for : 0
+(csvarinfo_t) pool_alloc (csvarinfo_pool)
+cs_new_var_info index: 6, func
+is_full_var = 0
+cs_new_var_info done
+cs_insert_vi_for_tree
+
+cs_insert_vi_for_tree 0 -1162296912 56345352
+ 
+(csvarinfo_t) pool_alloc (csvarinfo_pool)
+cs_new_var_info index: 7, func.varargs
+is_full_var = 0
+cs_new_var_info donePart 1 Done 
+
+preprocess_control_flow_graph STARTED %%%%%%%%%%%%%%%
++++++++++++++++
+---------------
+
+preprocess_control_flow_graph 1 %%%%%%%%%%%%%%%
+
+preprocess_control_flow_graph 2 %%%%%%%%%%%%%%%
+
+preprocess_control_flow_graph 3 %%%%%%%%%%%%%%%
+
+Block 0 is set as start block
+Block 1 is set as end block
+preprocess_control_flow_graph 4 %%%%%%%%%%%%%%%
+
+startbb=0, endbb=1
+preprocess_control_flow_graph 5 %%%%%%%%%%%%%%%
+
+Block 2
+Initializing block
+process_phi_pointers block 2
+in process phi pointers
+Return of phi pointer is 0
+block 2 has_phi=0
+preprocess_control_flow_graph 5 %%%%%%%%%%%%%%%
+
+Next block
+preprocess_control_flow_graph 5 %%%%%%%%%%%%%%%
+
+Block 4
+Initializing block
+process_phi_pointers block 4
+in process phi pointers
+Return of phi pointer is 0
+block 4 has_phi=0
+preprocess_control_flow_graph 5 %%%%%%%%%%%%%%%
+
+---------------------------------------
+
+Processing statement in block 4: 
+Assignment statement
+process_gimple_assign_stmt
+field_must_have_pointers
+must have pointers lhs
+not aggregate_type_p
+cs_get_constraint_for 1 %%%%%%%%%%%%
+
+cs_get_constraint_for 2 %%%%%%%%%%%%
+
+cs_get_constraint_for 3 %%%%%%%%%%%%
+
+cs_get_constraint_for
+
+cs_get_constraint_for_1
+tcc_declaration
+cs_get_constraint_for_ssa_var
+AN: cs_get_constraint_for_ssa_var 1 %%%%%%%%%%
+
+gcc_assert() saved
+AN: cs_get_constraint_for_ssa_var 2 %%%%%%%%%%
+
+AN: cs_get_constraint_for_ssa_var 4 %%%%%%%%%%
+
+cs_get_vi_for_tree
+slot == NULL
+2************************
+cs_create_variable_info_for
+
+name y
+
+cs_create_variable_info_for_1
+Creating var y
+1******************************************************************-1164306032
+
+2******************************************************************
+
+var cannot have subvars
+3******************************************************************
+
+<=1
+< MAX_FI... 100
+is_full_var 4 for y, y
+(csvarinfo_t) pool_alloc (csvarinfo_pool)
+cs_new_var_info index: 8, y
+is_full_var = 0
+cs_new_var_info done
+created vi y, id 8, offset 0
+
+cs_insert_vi_for_tree
+
+cs_insert_vi_for_tree 0 -1164306032 56345480
+ 
+cs_get_vi_for_tree
+In cs_get_constraint_for ssa_var: vi y, id 8, offset 0
+
+Index of variable 8
+AN: cs_get_constraint_for_ssa_var 5 %%%%%%%%%%
+
+!address_p
+vi->is_full_var
+Pushing cexpr.var=8
+pointer_type_p ??
+cs_get_constraint_for_1
+ADDR_EXPR
+cs_get_constraint_for_address_of
+cs_get_constraint_for_1
+tcc_declaration
+cs_get_constraint_for_ssa_var
+AN: cs_get_constraint_for_ssa_var 1 %%%%%%%%%%
+
+gcc_assert() saved
+AN: cs_get_constraint_for_ssa_var 2 %%%%%%%%%%
+
+AN: cs_get_constraint_for_ssa_var 4 %%%%%%%%%%
+
+cs_get_vi_for_tree
+slot == NULL
+2************************
+cs_create_variable_info_for
+
+name z
+
+cs_create_variable_info_for_1
+Creating var z
+1******************************************************************-1164306176
+
+2******************************************************************
+
+var cannot have subvars
+3******************************************************************
+
+<=1
+< MAX_FI... 100
+is_full_var 4 for z, z
+(csvarinfo_t) pool_alloc (csvarinfo_pool)
+cs_new_var_info index: 9, z
+is_full_var = 0
+cs_new_var_info done
+created vi z, id 9, offset 0
+
+cs_insert_vi_for_tree
+
+cs_insert_vi_for_tree 0 -1164306176 56345544
+ 
+cs_get_vi_for_tree
+In cs_get_constraint_for ssa_var: vi z, id 9, offset 0
+
+Index of variable 9
+AN: cs_get_constraint_for_ssa_var 5 %%%%%%%%%%
+
+vi->is_full_var
+Pushing cexpr.var=9
+in process_gimple_asgn_stmt
+
+cs_process_all_all_constraints loop
+lhsp 8 offset 47279171665234, rhsp 9 offset 51517617319445504
+
+(constraint_t) pool_alloc (constraint_pool)
+in cs process constraint
+Insert in alias pool : 8,8
+compute_alias_and_pinfo != NULL
+Next statementblock 4 has_phi=0
+---------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Processing statement in block 4: 
+Assignment statement
+Statement before current statement (before split): 
+Current statement (after split): 
+process_gimple_assign_stmt
+field_must_have_pointers
+must have pointers lhs
+not aggregate_type_p
+cs_get_constraint_for 1 %%%%%%%%%%%%
+
+cs_get_constraint_for 2 %%%%%%%%%%%%
+
+cs_get_constraint_for 3 %%%%%%%%%%%%
+
+cs_get_constraint_for
+
+cs_get_constraint_for_1
+SSA_NAME
+cs_get_constraint_for_ssa_var
+AN: cs_get_constraint_for_ssa_var 1 %%%%%%%%%%
+
+gcc_assert() saved
+AN: cs_get_constraint_for_ssa_var 2 %%%%%%%%%%
+
+AN: cs_get_constraint_for_ssa_var 4 %%%%%%%%%%
+
+cs_get_vi_for_tree
+slot == NULL
+1************************
+cs_create_variable_info_for
+
+name x_3
+
+cs_create_variable_info_for_1
+Creating var x_3
+1******************************************************************-1164319184
+
+2******************************************************************
+
+!decl_p
+3******************************************************************
+
+<=1
+< MAX_FI... 100
+is_full_var 4 for x, x_3
+(csvarinfo_t) pool_alloc (csvarinfo_pool)
+cs_new_var_info index: 10, x_3
+is_full_var = 0
+cs_new_var_info done
+created vi x_3, id 10, offset 0
+
+cs_insert_vi_for_tree
+
+cs_insert_vi_for_tree 0 -1164319184 56345608
+ 
+cs_get_vi_for_tree
+In cs_get_constraint_for ssa_var: vi x_3, id 10, offset 0
+
+Index of variable 10
+AN: cs_get_constraint_for_ssa_var 5 %%%%%%%%%%
+
+!address_p
+vi->is_full_var
+Pushing cexpr.var=10
+pointer_type_p ??
+cs_get_constraint_for_1
+ADDR_EXPR
+cs_get_constraint_for_address_of
+cs_get_constraint_for_1
+tcc_declaration
+cs_get_constraint_for_ssa_var
+AN: cs_get_constraint_for_ssa_var 1 %%%%%%%%%%
+
+gcc_assert() saved
+AN: cs_get_constraint_for_ssa_var 2 %%%%%%%%%%
+
+AN: cs_get_constraint_for_ssa_var 4 %%%%%%%%%%
+
+cs_get_vi_for_tree
+*******************
+In cs_get_constraint_for ssa_var: vi y, id 8, offset 0
+
+Index of variable 8
+AN: cs_get_constraint_for_ssa_var 5 %%%%%%%%%%
+
+vi->is_full_var
+Pushing cexpr.var=8
+in process_gimple_asgn_stmt
+
+cs_process_all_all_constraints loop
+lhsp 10 offset 47279171665234, rhsp 8 offset 51517617319445504
+
+(constraint_t) pool_alloc (constraint_pool)
+in cs process constraint
+Insert in alias pool : 10,10
+compute_alias_and_pinfo != NULL
+Next statementblock 5 has_phi=0
+---------------------------------------
+
+Processing statement in block 5: 
+Call or end block
+Call statement
+split 1
+Function decl
+Reached
+Split after block
+Call statement again
+Set block type of 6 to CALL_BLOCK
+Discovering the static call argument mapping
+map_arguments_at_call
+cs_get_vi_for_tree
+*******************
+Done map_arguments_at_call
+Next statementblock 6 has_phi=0
+Next block
+preprocess_control_flow_graph 5 %%%%%%%%%%%%%%%
+
+Block 7
+Initializing block
+process_phi_pointers block 7
+in process phi pointers
+Return of phi pointer is 0
+block 7 has_phi=0
+preprocess_control_flow_graph 5 %%%%%%%%%%%%%%%
+
+---------------------------------------
+
+Processing statement in block 7: 
+Assignment statement
+process_gimple_assign_stmt
+field_must_have_pointers
+must have pointers lhs
+not aggregate_type_p
+cs_get_constraint_for 1 %%%%%%%%%%%%
+
+cs_get_constraint_for 2 %%%%%%%%%%%%
+
+cs_get_constraint_for 3 %%%%%%%%%%%%
+
+cs_get_constraint_for
+
+cs_get_constraint_for_1
+SSA_NAME
+cs_get_constraint_for_ssa_var
+AN: cs_get_constraint_for_ssa_var 1 %%%%%%%%%%
+
+gcc_assert() saved
+AN: cs_get_constraint_for_ssa_var 2 %%%%%%%%%%
+
+AN: cs_get_constraint_for_ssa_var 4 %%%%%%%%%%
+
+cs_get_vi_for_tree
+slot == NULL
+1************************
+cs_create_variable_info_for
+
+name _5
+
+cs_create_variable_info_for_1
+Creating var _5
+1******************************************************************-1164319112
+
+2******************************************************************
+
+!decl_p
+3******************************************************************
+
+<=1
+< MAX_FI... 100
+is_full_var 4 for (null), _5
+(csvarinfo_t) pool_alloc (csvarinfo_pool)
+cs_new_var_info index: 11, _5
+is_full_var = 0
+cs_new_var_info done
+created vi _5, id 11, offset 0
+
+cs_insert_vi_for_tree
+
+cs_insert_vi_for_tree 0 -1164319112 56345672
+ 
+cs_get_vi_for_tree
+In cs_get_constraint_for ssa_var: vi _5, id 11, offset 0
+
+Index of variable 11
+AN: cs_get_constraint_for_ssa_var 5 %%%%%%%%%%
+
+!address_p
+vi->is_full_var
+Pushing cexpr.var=11
+pointer_type_p ??
+cs_get_constraint_for_1
+MEM_REF
+cs_get_constraint_for_ptr_offset()
+in else of cs_get_constraint_for_ptr_offset()
+offset 47655792765928, rhsoffset 0
+cs_get_constraint_for_1
+SSA_NAME
+cs_get_constraint_for_ssa_var
+AN: cs_get_constraint_for_ssa_var 1 %%%%%%%%%%
+
+gcc_assert() saved
+AN: cs_get_constraint_for_ssa_var 2 %%%%%%%%%%
+
+AN: cs_get_constraint_for_ssa_var 4 %%%%%%%%%%
+
+cs_get_vi_for_tree
+slot == NULL
+1************************
+cs_create_variable_info_for
+
+name x_3
+
+cs_create_variable_info_for_1
+Creating var x_3
+1******************************************************************-1164319184
+
+2******************************************************************
+
+!decl_p
+3******************************************************************
+
+<=1
+< MAX_FI... 100
+is_full_var 4 for x, x_3
+(csvarinfo_t) pool_alloc (csvarinfo_pool)
+cs_new_var_info index: 12, x_3
+is_full_var = 0
+cs_new_var_info done
+created vi x_3, id 12, offset 0
+
+cs_insert_vi_for_tree
+
+cs_insert_vi_for_tree 56077944 -1164319184 56345736
+ In function ‘main’:
+lto1: internal compiler error: in cs_insert_vi_for_tree, at parser.cpp:919
+Please submit a full bug report,
+with preprocessed source if appropriate.
+Please include the complete backtrace with any bug report.
+See <http://gcc.gnu.org/bugs.html> for instructions.
+lto-wrapper: fatal error: /home/komal/gcc/gcc520/install/bin/g++ returned 1 exit status
+compilation terminated.
+/usr/bin/ld: lto-wrapper failed
+collect2: error: ld returned 1 exit status
+make: *** [test] Error 1

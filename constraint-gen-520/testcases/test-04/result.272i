@@ -1,0 +1,75 @@
+
+cs618heap: STARTED.
+
+Symbols to be put in SSA form
+{ D.3960 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 4
+Number of blocks to update: 3 ( 75%)
+
+
+
+
+Function : main
+
+Parsed data: index 0, bool 1, block 4, 
+assignment index=0
+LHS: variable id 6, ptr_arith=0, offset 0(), type 0, name ppi_1, RHS: variable id 7, ptr_arith=0, offset 0(), type 2, name pi
+Parsed data: index 1, bool 1, block 5, 
+assignment index=1
+LHS: variable id 8, ptr_arith=0, offset 0(), type 0, name ppi_2, RHS: variable id 7, ptr_arith=0, offset 0(), type 2, name pi
+Parsed data: index 2, bool 1, block 6, 
+assignment index=2
+LHS: variable id 9, ptr_arith=0, offset 0(), type 0, name ppi_3, RHS: variable id 7, ptr_arith=0, offset 0(), type 2, name pi
+Parsed data: index 3, bool 1, block 7, 
+assignment index=3
+LHS: variable id 10, ptr_arith=0, offset 0(), type 0, name _5, RHS: variable id 9, ptr_arith=0, offset 0(), type 1, name ppi_3
+Parsed data: index 4, bool 1, block 8, 
+assignment index=4
+LHS: variable id 7, ptr_arith=0, offset 0(), type 0, name pi, RHS: variable id 10, ptr_arith=0, offset 0(), type 0, name _5
+Parsed data: index 5, bool 1, block 9, 
+assignment index=5
+LHS: variable id 11, ptr_arith=0, offset 0(), type 0, name _7, RHS: variable id 7, ptr_arith=0, offset 0(), type 0, name pi
+Parsed data: index 6, bool 1, block 10, 
+assignment index=6
+LHS: variable id 9, ptr_arith=0, offset 0(), type 1, name ppi_3, RHS: variable id 11, ptr_arith=0, offset 0(), type 0, name _7
+Function : main
+
+Block : 2
+
+Block : 4
+1: ppi_1 = &pi;
+
+Block : 5
+2: ppi_2 = &pi + 8;
+
+Block : 6
+3: ppi_3 = &pi + 18446744073709551608;
+
+Block : 7
+4: _5 = *ppi_3;
+
+Block : 8
+5: pi = _5;
+
+Block : 9
+6: _7 = pi;
+
+Block : 10
+7: *ppi_3 = _7;
+
+Block : 11
+8: _9 = 0;
+
+Block : 12
+9: pi ={v} {CLOBBER};
+
+Block : 3
+10: <L0>:
+
+Block : 13
+11: return _9;
+
+
+
+cs618heap: ENDED.

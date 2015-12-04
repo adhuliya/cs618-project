@@ -1,5 +1,16 @@
 #!/usr/bin/python3
 
+"""
+This program extracts the constraints generated only for the main() in C.
+
+It has been customized for GCC 4.7.2 version of constraint-gen code.
+
+It extracts the Constraint and the gimple stmt it corresponds to.
+
+TODO: separate the comparison part from the constraint enumeration part.
+As they are not compatible.
+"""
+
 import sys
 import re
 import os
@@ -91,7 +102,7 @@ def extract_blk_content (filename):
     Extract the gimple statements from the result.233i.heap file generated 
     from GCC 4.7.2 and store the statements in a dictionary with key as blockid.
 
-    Returns a dictionary: key : blkid, value: gimple statement
+    Returns a dictionary: key : blkid, value: single gimple statement
     """
 
     blkdict = dict()
@@ -182,12 +193,19 @@ def format_content (parsedcontent, blkdict):
     fmt_content = []
     pd = ParsedData ()
 
+    blkid = 0
+
     for pdata in parsedcontent:
         m = re.search (r"Parsed data: index (\d+), bool (\d+), block (\d+),", pdata[1]);
         pd = ParsedData (index=int(m.group (1)), assign=bool(int(m.group(2))), 
                 block=int(m.group(3)))
         pd.pdata.append (pdata[1])
         pd.stmt = blkdict[pd.block]
+
+        if pd.block < blkid:
+            break
+        else:
+            blkid = pd.block
 
         if not pd.assign:
             # use of a variable

@@ -4124,27 +4124,27 @@ preprocess_control_flow_graph ()
 					// This is required if we want to give each field
 					// in the statement a unique statement id.
 #if SPLIT_DEREF
-#if SPLIT_ALL == 0
-					if (possibly_deref (stmt))
-#endif
-					{
-						gimple_stmt_iterator origgsi = gsi;
-						gsi_prev (&gsi);
-						if (!gsi_end_p (gsi))
-						{
-							DEBUG ("\nStatement before current statement (before split): ");
-#if DEBUG_CONTAINER
-							print_gimple_stmt (dump_file, gsi_stmt(gsi), 0, 0);
-#endif
-							gsi = split_bb_at_stmt (current_block, gsi_stmt (gsi));
-							DEBUG ("\nCurrent statement (after split): ");
-#if DEBUG_CONTAINER
-							print_gimple_stmt (dump_file, gsi_stmt(gsi), 0, 0);
-#endif
-						}
-						else
-							gsi = origgsi;
-					}
+ #if SPLIT_ALL == 0
+ 					if (possibly_deref (stmt))
+ #endif
+ 					{
+ 						gimple_stmt_iterator origgsi = gsi;
+ 						gsi_prev (&gsi);
+ 						if (!gsi_end_p (gsi))
+ 						{
+ 							DEBUG ("\nStatement before current statement (before split): ");
+ #if DEBUG_CONTAINER
+ 							print_gimple_stmt (dump_file, gsi_stmt(gsi), 0, 0);
+ #endif
+ 							gsi = split_bb_at_stmt (current_block, gsi_stmt (gsi));
+ 							DEBUG ("\nCurrent statement (after split): ");
+ #if DEBUG_CONTAINER
+ 							print_gimple_stmt (dump_file, gsi_stmt(gsi), 0, 0);
+ #endif
+ 						}
+ 						else
+ 							gsi = origgsi;
+ 					}
 #endif
 
 					check_deref = true;
@@ -4907,12 +4907,13 @@ print_original_cfg ()
 		basic_block current_block;
 		FOR_EACH_BB_FN(current_block, func)// FOR_EACH_BB (current_block)
 		{
-			RESULT ("\nBlock : %d\n", current_block->index);
+			RESULT ("\n<bb %d>\n", current_block->index);
 			gimple_stmt_iterator gsi;
 // #if DEBUG_CONTAINER
 			for (gsi = gsi_start_bb (current_block); !gsi_end_p (gsi); gsi_next (&gsi))
 			{
-				RESULT ("%d: ", n++);
+				//AN RESULT ("%d: ", n++);
+				RESULT ("  ", n++);
 				print_gimple_stmt (dump_file, gsi_stmt (gsi), 0, 0);
 			}
 // #endif

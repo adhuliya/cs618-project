@@ -4,7 +4,125 @@ import sys
 import re
 import os
 
-def extract_file_content (filename):
+class AssignConstr:
+    def __init__ (self, index=-1, lhs=True, varid=-1, ptr_arith=False, 
+            offset=0, usetype=0, name='--'):
+        self.index = index
+        self.lhs = lhs
+        self.ptr_arith = ptr_arith
+        self.usetype = usetype
+
+        self.varinfo = VarInfo (varid, offset, name)
+
+
+    def __eq__ (self, other):
+        result = self.ptr_arith == other.prt_arith
+        result = result and self.offset == other.offset
+        result = result and self.usetype == self.usetype
+        
+        return result
+
+    def __hash__ (self):
+        hsh = 0
+        if self.ptr_arith: 
+            hsh += 1 
+        hsh += self.offset
+        hsh += usetype
+
+        return hsh
+
+    def __str__ (self):
+        lhs = 'RHS'
+        if self.lhs: lhs = 'LHS'
+        return "(AssignConstr: {2}, {0}, {1.usetype}, {1.ptr_arith})".format (
+                str(self.varinfo), self, lhs)
+
+class VarInfo:
+    def __init__ (self, varid=-1, offset="", name='--'):
+        self.varid = varid
+        self.offset = offset
+        self.name = name
+
+    def __eq__ (self, other):
+        if not isinstance(other, VarInfo): return NotImplemented
+
+        return (self.varid == other.varid and self.offset == other.offset
+                    and self.name == other.name)
+
+    def __str__ (self):
+        return "(VarInfo: {0.varid}, {0.offset}, {0.name})".format (self)
+
+
+class ParsedData:
+    def __init__ (self, index=-1, assign=True, block=-1):
+        self.index = index
+        self.assign = assign
+        self.block = block
+
+        self.pdata = []
+        self.stmt = ''      #gimple statement
+
+        if assign:
+            self.asgnindex = -1
+            self.lhs = AssignConstr ()
+            self.rhs = AssignConstr ()
+            self.variables = None
+        else:
+            self.varinfos = []
+            self.lhs = None
+            self.rhn = None
+
+    def __str__ (self):
+        lst = []
+        out = "(ParsedData:[{}] {}, {}, {}:\n{})"
+        if self.assign:
+            lst.append (str (self.lhs))
+            lst.append (str (self.rhs))
+        else:
+            for vi in self.varinfos:
+                lst.append (str (vi))
+
+        return out.format (self.stmt, self.index, self.assign, self.block, 
+                "\n".join (lst))
+
+def extract_blk_content (filename):
+    """
+    Needs main to be defined! Only extracts from main()
+    Extract the gimple statements from the result.233i.heap file generated 
+    from GCC 4.7.2 and store the statements in a dictionary with key as blockid.
+
+    Returns a dictionary: key : blkid, value: gimple statement
+    """
+
+    blkdict = dict()
+    blkid = -1
+    inblk = False
+    fc = ''
+
+    with open (filename, encoding='utf-8') as f:
+        fc = f.read()
+
+    match= re.search (r'main \(\)\s+{(?P<main>.*?)\s+}\n', fc, re.DOTALL)
+
+    main = match.group ('main')
+
+    # print (main) # delit
+
+    lines = main.splitlines ()
+
+    for line in lines:
+        match = re.search (r'<bb\s+?(\d+)>', line)
+        if match:
+            blkid = int (match.group (1))
+            inblk = True
+        else:
+            if inblk:
+                blkdict[blkid] = line.strip()
+                inblk = False
+
+    return blkdict
+
+def extract_constraints (filename):
     """
     Reformat the file content, such that the file comparison can be straight
     forward with a tool like diff (if found feasible later)
@@ -60,44 +178,57 @@ def process_name (name):
         p_name = "temp"
     return p_name
 
-def format_content (content):
+def format_content (parsedcontent, blkdict):
     fmt_content = []
-    tmp = []
-    for pdata in content:
-        tmp = []
-        tmp.append (pdata[0])
-        match = re.search (r"Parsed data: index (.*), bool (.*), block (.*?),", pdata[1]);
-        tmp.append ([pdata[1], match.group (1), match.group (2), match.group (3)])
-        if pdata[0] == 0:
+    pd = ParsedData ()
+
+    for pdata in parsedcontent:
+        m = re.search (r"Parsed data: index (\d+), bool (\d+), block (\d+),", pdata[1]);
+        pd = ParsedData (index=int(m.group (1)), assign=bool(int(m.group(2))), 
+                block=int(m.group(3)))
+        pd.pdata.append (pdata[1])
+        pd.stmt = blkdict[pd.block]
+
+        if not pd.assign:
             # use of a variable
             for i in range (2, len(pdata)):
-                match = re.search(r"Var id (.*), name (.*), offset (.*)", pdata[i])
-                name = process_name (match.group (2))
-                tmp.append ([pdata[i], match.group (1), name, match.group (3)])
-        elif pdata[0] == 1:
+                m = re.search(r"Var id (\d+), name (.*), offset (\d+)", pdata[i])
+                name = process_name (m.group (2))
+                pd.varinfos.append (VarInfo (varid=int(m.group (1)), 
+                    offset=int(m.group (3)), name=name))
+                pd.pdata.append (pdata[i])
+
+        else:
             # an assignment
-            match = re.search (r"assignment index=(.*)", pdata[2])
-            tmp.append ([pdata[2], match.group (1)])
+            m = re.search (r"assignment index=(\d+)", pdata[2])
+            pd.asgnindex = int(m.group (1))
 
-            ttt = ("(LHS: variable id (.*), ptr_arith=(.*), offset (.*),"
-                    " type (.*), name (.*),) (RHS: variable id (.*), ptr_arith=(.*),"
-                    " offset (.*), type (.*), name (.*))")
-            match = re.search (ttt, pdata[3])
+            ttt = ("(LHS: variable id (\d+), ptr_arith=(\d+), offset (.*?),"
+                    " type (\d+), name (.*),) (RHS: variable id (\d+), ptr_arith=(\d+),"
+                    " offset (.*?), type (\d+), name (.*))")
+            m = re.search (ttt, pdata[3])
 
-            name_lhs = process_name (match.group (6))
-            name_rhs = process_name (match.group (12))
+            # store LHS
+            pd.pdata.append (m.group(1))
+            pd.lhs.varinfo = VarInfo (varid=int(m.group(2)),
+                offset=m.group(4), name=process_name(m.group(6)))
+            pd.lhs.lhs = True
+            pd.lhs.ptr_arith = bool (m.group (3))
+            pd.lhs.usetype = int (m.group (5))
 
-            tmp.append ([match.group (1), match.group (2), match.group (3),  
-                match.group (4), match.group (5), name_lhs])
-            tmp.append ([match.group (7), match.group (8), match.group (9), 
-                match.group (10), match.group (11), name_rhs])
+            # store RHS
+            pd.pdata.append (m.group(7))
+            pd.rhs.varinfo = VarInfo (varid=int(m.group(8)),
+                offset=m.group(10), name=process_name(m.group(12)))
+            pd.rhs.lhs = False
+            pd.rhs.ptr_arith = bool (m.group (9))
+            pd.rhs.usetype = int (m.group (11))
 
-        fmt_content.append (tmp)
+        fmt_content.append (pd)
 
-    # for fmt in fmt_content:
-    #     print (fmt)
-    #     print ()
-
+    for pd in fmt_content:
+        print (pd)
+        print ()
 
     return fmt_content
 
@@ -213,24 +344,27 @@ def main():
         print ("Usage: ./compare.py <file1> <file2>")
 
     # extract the relevant portions from the files
-    content1 = extract_file_content (file1)
-    content2 = extract_file_content (file2)
+    constraints1 = extract_constraints (file1)
+    constraints2 = extract_constraints (file2)
+
+    blk_content1 = extract_blk_content (file1)
+    #blk_content2 = extract_blk_content (file2)
 
     # write the extracted content to new files
-    write_to_file (name=file1, suffix="-new", content=content1)
-    write_to_file (name=file2, suffix="-new", content=content2)
+    write_to_file (name=file1, suffix="-new", content=constraints1)
+    write_to_file (name=file2, suffix="-new", content=constraints2)
 
     # format the content for adequate automatic comparison
-    fmt_content1 = format_content (content1)
+    fmt_content1 = format_content (constraints1, blk_content1)
     # print ("################################################################")
-    fmt_content2 = format_content (content2)
+    #fmt_content2 = format_content (constraints2)
 
     # compare the contents 
     # returns true if equal
-    isequal = compare (fmt_content1, fmt_content2)
+    # isequal = compare (fmt_content1, fmt_content2)
 
-    if not isequal:
-        print ("Found: Difference in Constraints")
+    # if not isequal:
+    #     print ("Found: Difference in Constraints")
 
 
 if __name__ == '__main__':
